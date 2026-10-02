@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Personal Website</title>
+  <style>
+    :root {
+      --bg: #fcfcfc;
+      --text: #1a1a1a;
+      --text-muted: #666666;
+      --border: #e5e5e5;
+      --accent: #2563eb;
+      --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .item {
+      margin-bottom: 1.5rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .item-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .item-sub {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-position: inside;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p class="subtitle">Software Engineer & Researcher</p>
+      <div class="links">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Passionate software engineer and researcher working on distributed systems, open-source tooling, and algorithmic optimizations. Currently focused on building scalable cloud architecture and high-performance computing pipelines.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Senior Software Engineer</span>
+          <span class="item-date">2023 – Present</span>
+        </div>
+        <div class="item-sub">Tech Company Inc. • San Francisco, CA</div>
+        <ul>
+          <li>Architected microservices handling over 10M daily requests with 99.99% uptime.</li>
+          <li>Optimized database queries resulting in a 45% latency reduction across core API endpoints.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Research Assistant</span>
+          <span class="item-date">2021 – 2023</span>
+        </div>
+        <div class="item-sub">University Computational Lab</div>
+        <ul>
+          <li>Co-authored research on parallel compute node optimization.</li>
+          <li>Developed benchmarking scripts in Python and Rust for continuous performance analysis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">M.S. in Computer Science</span>
+          <span class="item-date">2021 – 2023</span>
+        </div>
+        <div class="item-sub">University Name</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">B.S. in Computer Science</span>
+          <span class="item-date">2017 – 2021</span>
+        </div>
+        <div class="item-sub">University Name</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Publications</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title"><a href="#">Open-Source Engine</a></span>
+          <span class="item-date">2024</span>
+        </div>
+        <p class="item-sub">A fast, lightweight data processor written in Rust.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title"><a href="#">Paper: Scalable Data Pipelines</a></span>
+          <span class="item-date">2022</span>
+        </div>
+        <p class="item-sub">Published in Proceedings of IEEE / ACM Systems Conference.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Your Name. Built with standard HTML & CSS.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
