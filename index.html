@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Personal Website</title>
+  <title>PD Dr. Ksenia Fedosova - Mathematics Researcher</title>
   <style>
     :root {
       --bg: #fcfcfc;
       --text: #1a1a1a;
-      --text-muted: #666666;
+      --text-muted: #555555;
       --border: #e5e5e5;
-      --accent: #2563eb;
+      --accent: #1d4ed8;
       --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -25,11 +25,11 @@
       color: var(--text);
       font-family: var(--font-main);
       line-height: 1.6;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
     }
 
     .container {
-      max-width: 680px;
+      max-width: 720px;
       margin: 0 auto;
     }
 
@@ -40,7 +40,7 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       margin-bottom: 0.25rem;
@@ -54,7 +54,8 @@
 
     .links {
       display: flex;
-      gap: 1rem;
+      flex-wrap: wrap;
+      gap: 1.25rem;
       font-size: 0.95rem;
     }
 
@@ -72,12 +73,14 @@
     }
 
     h2 {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       color: var(--text-muted);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
     }
 
     .item {
@@ -88,7 +91,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.2rem;
     }
 
     .item-title {
@@ -99,12 +102,15 @@
     .item-date {
       color: var(--text-muted);
       font-size: 0.875rem;
+      font-weight: 500;
+      white-space: nowrap;
+      margin-left: 1rem;
     }
 
     .item-sub {
       color: var(--text-muted);
       font-size: 0.95rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
 
     ul {
@@ -114,7 +120,36 @@
     }
 
     li {
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .pub-authors {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .pub-venue {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
     }
 
     footer {
@@ -122,6 +157,8 @@
       padding-top: 1.5rem;
       color: var(--text-muted);
       font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
     }
   </style>
 </head>
@@ -129,91 +166,195 @@
 
   <div class="container">
     <header>
-      <h1>Your Name</h1>
-      <p class="subtitle">Software Engineer & Researcher</p>
+      <h1>PD Dr. Ksenia Fedosova</h1>
+      <p class="subtitle">Postdoctoral Researcher in Mathematics • University of Göttingen</p>
       <div class="links">
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+        <a href="mailto:ksenia.fedosova@mathematik.uni-goettingen.de">Email</a>
+        <span>Location: Göttingen, Germany</span>
       </div>
     </header>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Passionate software engineer and researcher working on distributed systems, open-source tooling, and algorithmic optimizations. Currently focused on building scalable cloud architecture and high-performance computing pipelines.</p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
+    <section id="publications">
+      <h2>Publications & Preprints</h2>
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">Senior Software Engineer</span>
-          <span class="item-date">2023 – Present</span>
+          <span class="pub-title">Spectral and dynamical invariants of Hecke triangle groups via transfer operators</span>
+          <span class="item-date">2026</span>
         </div>
-        <div class="item-sub">Tech Company Inc. • San Francisco, CA</div>
-        <ul>
-          <li>Architected microservices handling over 10M daily requests with 99.99% uptime.</li>
-          <li>Optimized database queries resulting in a 45% latency reduction across core API endpoints.</li>
-        </ul>
+        <div class="pub-venue">Proc. AMS</div>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">Research Assistant</span>
-          <span class="item-date">2021 – 2023</span>
+          <span class="pub-title">Convolution identities for complex-indexed divisor functions and modular graph functions</span>
+          <span class="item-date">2025</span>
         </div>
-        <div class="item-sub">University Computational Lab</div>
-        <ul>
-          <li>Co-authored research on parallel compute node optimization.</li>
-          <li>Developed benchmarking scripts in Python and Rust for continuous performance analysis.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">M.S. in Computer Science</span>
-          <span class="item-date">2021 – 2023</span>
-        </div>
-        <div class="item-sub">University Name</div>
+        <div class="pub-authors">with K. Klinger-Logan</div>
+        <div class="pub-venue">arXiv:2512.21413</div>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">B.S. in Computer Science</span>
-          <span class="item-date">2017 – 2021</span>
-        </div>
-        <div class="item-sub">University Name</div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects & Publications</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title"><a href="#">Open-Source Engine</a></span>
+          <span class="pub-title">Convolution identities for divisor sums and modular forms</span>
           <span class="item-date">2024</span>
         </div>
-        <p class="item-sub">A fast, lightweight data processor written in Rust.</p>
+        <div class="pub-authors">with K. Klinger-Logan, D. Radchenko</div>
+        <div class="pub-venue">Proc. Natl. Acad. Sci. U.S.A. 121 (44)</div>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title"><a href="#">Paper: Scalable Data Pipelines</a></span>
+          <span class="pub-title">Casimir energy of hyperbolic orbifolds with conical singularities</span>
+          <span class="item-date">2024</span>
+        </div>
+        <div class="pub-authors">with J. Rowlett, G. Zhang</div>
+        <div class="pub-venue">J. Math. Phys. 65.10</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Counting resonances on hyperbolic surfaces with unitary twists</span>
+          <span class="item-date">2024</span>
+        </div>
+        <div class="pub-authors">with M. Doll, A. Pohl</div>
+        <div class="pub-venue">Commun. Anal. Geom. 32(10), 2805-2887</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Shifted convolution sums motivated by string theory</span>
+          <span class="item-date">2024</span>
+        </div>
+        <div class="pub-authors">with K. Klinger-Logan</div>
+        <div class="pub-venue">J. Number Theory 260, 151-172</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Whittaker Fourier type solutions to differential equations arising from string theory</span>
+          <span class="item-date">2023</span>
+        </div>
+        <div class="pub-authors">with K. Klinger-Logan</div>
+        <div class="pub-venue">Commun. Number Theory Phys. 17(3)</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">The twisted Selberg trace formula and the Selberg zeta function for compact orbifolds</span>
+          <span class="item-date">2023</span>
+        </div>
+        <div class="pub-venue">Math. Z. 305(4)</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Scattering theory with unitary twists</span>
           <span class="item-date">2022</span>
         </div>
-        <p class="item-sub">Published in Proceedings of IEEE / ACM Systems Conference.</p>
+        <div class="pub-authors">with M. Doll, A. Pohl</div>
+        <div class="pub-venue">J. Anal. Math. (2023)</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Fourier expansions of vector-valued automorphic functions with non-unitary twists</span>
+          <span class="item-date">2022</span>
+        </div>
+        <div class="pub-authors">with A. Pohl, J. Rowlett</div>
+        <div class="pub-venue">Commun. Number Theory Phys. 17(1), 2023</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">High energy asymptotics for the perturbed anharmonic oscillator</span>
+          <span class="item-date">2021</span>
+        </div>
+        <div class="pub-authors">with M. Nursultanov</div>
+        <div class="pub-venue">Complex Var. Elliptic Equ.</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Second variation of Selberg zeta functions and curvature asymptotics</span>
+          <span class="item-date">2020</span>
+        </div>
+        <div class="pub-authors">with J. Rowlett, G. Zhang</div>
+        <div class="pub-venue">Ann. Global Anal. Geom. 57(1): 23-60</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Eisenstein series twisted with non-expanding cusp monodromies</span>
+          <span class="item-date">2020</span>
+        </div>
+        <div class="pub-authors">with A. Pohl</div>
+        <div class="pub-venue">Ramanujan J. 51: 649-670</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="pub-title">Meromorphic continuation of Selberg zeta functions with twists having non-expanding cusp monodromy</span>
+          <span class="item-date">2020</span>
+        </div>
+        <div class="pub-authors">with A. Pohl</div>
+        <div class="pub-venue">Selecta Math. (N.S.) 26(1): Art. 9</div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching & Supervision</h2>
+      
+      <div class="item">
+        <div class="item-title">Lecturer Courses</div>
+        <ul>
+          <li><strong>WS 2026:</strong> Introduction to Volume Conjecture (University of Göttingen)</li>
+          <li><strong>SS 2026:</strong> Optimal sphere packings - invited lecture series (University of Göttingen)</li>
+          <li><strong>SS 2024:</strong> Selberg trace formula - invited mini-course (University of Göttingen)</li>
+          <li><strong>SS 2023:</strong> Analytic number theory (University of Freiburg)</li>
+          <li><strong>SS 2022:</strong> Fourier series (University of Freiburg)</li>
+          <li><strong>SS 2020:</strong> Transfer operator and modular forms (University of Freiburg)</li>
+          <li><strong>SS 2019:</strong> Elementary geometry (University of Freiburg)</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Teaching Assistant / Tutor</div>
+        <p class="item-sub">Fourier analysis, Analysis I–III, Differential Geometry I–II, General relativity, Pseudodifferential operators, Sturm-Liouville theory, Hyperbolic Gromov Groups, Hyperfunctions, and Differential Topology.</p>
+      </div>
+
+
+    <section id="organization">
+      <h2>Organization & Service</h2>
+      <ul>
+        <li><strong>2026:</strong> Co-leader, BIRS Workshop: Women in Numbers 7, Banff International Research Station (BIRS)</li>
+        <li><strong>2022:</strong> Co-organizer, Fifth meeting of young women in mathematics, University of Freiburg</li>
+        <li><strong>2019:</strong> Organizer, Lecture course "Hypoelliptic Laplace operators and applications", University of Freiburg</li>
+        <li><strong>2018:</strong> Co-organizer, Analysis of differential operators on manifolds, University of Freiburg</li>
+      </ul>
+    </section>
+
+    <section id="outreach">
+      <h2>Science Communication & Outreach</h2>
+      <ul>
+        <li><strong>2020 – 2021:</strong> Development and production of video lecture series <em>'Transfer operators and modular forms'</em>.</li>
+        <li><strong>2015 – Present:</strong> YouTube channel on applied mathematics (highest-viewed video: 130K+ views).</li>
+        <li><strong>2023:</strong> Oberwolfach Workshop Report: <em>"Inhomogeneous Laplace operator and string theory"</em> (Geometric spectral theory).</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="badge-list">
+        <span class="badge"><strong>Russian:</strong> Native / Fluent</span>
+        <span class="badge"><strong>English:</strong> C2</span>
+        <span class="badge"><strong>German:</strong> C1</span>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2026 Your Name. Built with standard HTML & CSS.</p>
+      <p>&copy; 2026 PD Dr. Ksenia Fedosova</p>
+      <p>Hosted on GitHub Pages</p>
     </footer>
   </div>
 
